@@ -6,21 +6,19 @@
  * @return {string[][]}
  */
 var groupAnagrams = function (strs) {
-  const anagramIndexes = {}
-  const groupedAnagrams = []
+  const groupedAnagrams = {}
 
   for (const string of strs) {
     const sortedString = string.split('').sort().join('')
 
-    if (anagramIndexes[sortedString] != null) {
-      groupedAnagrams[anagramIndexes[sortedString]].push(string)
+    if (groupedAnagrams[sortedString] != null) {
+      groupedAnagrams[sortedString].push(string)
     } else {
-      anagramIndexes[sortedString] = groupedAnagrams.length
-      groupedAnagrams.push([string])
+      groupedAnagrams[sortedString] = [string]
     }
   }
 
-  return groupedAnagrams
+  return Object.values(groupedAnagrams)
 }
 
 module.exports = groupAnagrams
