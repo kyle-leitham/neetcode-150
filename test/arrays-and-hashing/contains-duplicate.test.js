@@ -1,4 +1,4 @@
-const containsDuplicate = require('../../arrays-and-hashing/contains-duplicate')
+const containsDuplicate = require('../../src/arrays-and-hashing/contains-duplicate')
 
 test('case 1', () => {
   expect(containsDuplicate([1, 2, 3, 1])).toBe(true)

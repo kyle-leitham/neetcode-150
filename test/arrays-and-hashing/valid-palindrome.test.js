@@ -1,4 +1,4 @@
-const isPalindrome = require('../../arrays-and-hashing/valid-palindrome')
+const isPalindrome = require('../../src/arrays-and-hashing/valid-palindrome')
 
 test('case 1', () => {
   expect(isPalindrome('A man, a plan, a canal: Panama')).toBe(true)

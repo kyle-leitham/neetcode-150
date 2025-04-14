@@ -1,4 +1,4 @@
-const isValidSudoku = require('../../arrays-and-hashing/valid-sudoku')
+const isValidSudoku = require('../../src/arrays-and-hashing/valid-sudoku')
 
 test('case 1', () => {
   expect(

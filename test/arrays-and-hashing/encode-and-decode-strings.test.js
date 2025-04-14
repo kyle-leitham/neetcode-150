@@ -1,4 +1,4 @@
-const { encode, decode } = require('../../arrays-and-hashing/encode-and-decode-strings')
+const { encode, decode } = require('../../src/arrays-and-hashing/encode-and-decode-strings')
 
 test('case 1', () => {
   expect(decode(encode(['one', 'two', 'three']))).toStrictEqual(['one', 'two', 'three'])

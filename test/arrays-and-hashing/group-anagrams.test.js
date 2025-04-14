@@ -1,4 +1,4 @@
-const groupAnagrams = require('../../arrays-and-hashing/group-anagrams')
+const groupAnagrams = require('../../src/arrays-and-hashing/group-anagrams')
 
 test('case 1', () => {
   expect(groupAnagrams(['eat', 'tea', 'tan', 'ate', 'nat', 'bat'])).toEqual(
