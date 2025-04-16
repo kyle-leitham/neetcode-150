@@ -24,3 +24,5 @@ var maxArea = function (height) {
 
   return area
 }
+
+module.exports = maxArea
